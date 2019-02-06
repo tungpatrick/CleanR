@@ -19,3 +19,5 @@ Description: This package cleans a dataset and returns summary statistics as wel
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+URL: https://github.com/tungpatrick/CleanR
+BugReports: https://github.com/tungpatrick/CleanR/issues
