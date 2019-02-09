@@ -11,4 +11,11 @@ test_that("Test that input is a data frame", {
   expect_error(replace_na("Input Data"), "Input is not a data frame")
 })
 
+test_that("Test that input has NA", {
+  expect_error(replace_na("Input Data"), "Do not do anything if there are no NA")
+})
+test_that("Test that if the whole input has NA", {
+  expect_error(replace_na("Input Data"), "Throw a warning that the input is not valid")
+})
+
 
