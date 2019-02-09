@@ -33,22 +33,6 @@ locate_na <- function(input_df) {
 
 **Function 3)**
 ```
-#' Locate NAs
-#'
-#’ @description
-#’ Locate and return the indices to all missing values within an inputted dataframe.
-#’
-#' @param input_df dataframe, dataframe that the function will use to locate NAs
-#'
-#' @return a list of tuples containing indices of missing values
-#' @export
-
-locate_na <- function(input_df) {
-
-}
-```
-**Function 3)**
-```
 #' `replace_na`
 #' @description
 #'Replaces missing NA values with either min, #'max, median, #'or average (default) values of the column(s). #'There will #'be an option to remove the rows with NAs.
