@@ -10,8 +10,10 @@ locate_na(data)
 \item{data}{(tbl_df, df, data.frame) dataframe that the function will use to locate NAs}
 }
 \value{
-a dataframe containing indices of missing values
+a list containing indices of missing values
 }
 \description{
-Locate NAs
+Locate and return the indices to all missing values within an inputted dataframe.
+Each element of the returned list will be a column in a dataframe, which will hold
+the row indices of the missing values.
 }
