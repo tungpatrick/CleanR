@@ -44,15 +44,9 @@ You can install the released version of CleanR from [CRAN](https://CRAN.R-projec
 
 ``` r
 install.packages("CleanR")
+library(CleanR)
 ```
 
 ## R Dependencies
 
-## Example
-
-This is a basic example which shows you how to solve a common problem:
-
-``` r
-## basic example code
-```
-
+# Do we have any??
