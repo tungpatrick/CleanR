@@ -13,22 +13,25 @@ CleanR is especially developed to create a streamlined process to give you an ea
 **Function 1)**
 
 
-**Function 2)** `locate_na`: Returns a dataframe of the count and indices of NA values.  This function takes in a dataframe and finds NA values and returns the location of these values along the count of total NAs.
+**Function 2)** `locate_na`: Returns a list of the count and indices of NA values.  This function takes in a dataframe and finds NA values and returns the location of these missing values.
 
 ```
 #' Locate NAs
 #'
-#’ @description
-#’ Locate and return the indices to all missing values within an inputted dataframe.
-#’
-#' @param input_df dataframe, dataframe that the function will use to locate NAs
+#' @description
+#' Locate and return the indices to all missing values within an inputted dataframe.
+#' Each element of the returned list will be a column in a dataframe, which will hold
+#' the row indices of the missing values.
 #'
-#' @return a list of tuples containing indices of missing values
+#' @param data (tbl_df, df, data.frame) dataframe that the function will use to locate NAs
+#'
+#' @return a list containing indices of missing values
 #' @export
 
-locate_na <- function(input_df) {
+locate_na <- function(data) {
 
 }
+
 ```
 
 **Function 3)**
@@ -44,15 +47,9 @@ You can install the released version of CleanR from [CRAN](https://CRAN.R-projec
 
 ``` r
 install.packages("CleanR")
+library(CleanR)
 ```
 
 ## R Dependencies
 
-## Example
-
-This is a basic example which shows you how to solve a common problem:
-
-``` r
-## basic example code
-```
-
+# Do we have any??

@@ -1,5 +1,5 @@
 Package: CleanR
-Title: What the Package Does (One Line, Title Case)
+Title: Understand your messy data
 Version: 0.0.0.9000
 Authors@R: 
     c(person(given = "Heather",
@@ -21,3 +21,4 @@ Encoding: UTF-8
 LazyData: true
 URL: https://github.com/tungpatrick/CleanR
 BugReports: https://github.com/tungpatrick/CleanR/issues
+RoxygenNote: 6.1.1
