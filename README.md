@@ -32,6 +32,39 @@ locate_na <- function(input_df) {
 ```
 
 **Function 3)**
+```
+#' Locate NAs
+#'
+#’ @description
+#’ Locate and return the indices to all missing values within an inputted dataframe.
+#’
+#' @param input_df dataframe, dataframe that the function will use to locate NAs
+#'
+#' @return a list of tuples containing indices of missing values
+#' @export
+
+locate_na <- function(input_df) {
+
+}
+```
+**Function 3)**
+```
+#' `replace_na`
+#' @description
+#'Replaces missing NA values with either min, #'max, median, #'or average (default) values of the column(s). #'There will #'be an option to remove the rows with NAs.
+
+#' @param input_df dataframe, dataframe that the  function #'will use to replace NAs.
+
+#' @returns
+#'A list of tuples where each NAs will be replaced by either #'min, max, median or average.
+#'Each tuple in the list represents  the indices of a NA in #'the dataframe. 
+   
+#' @exports
+#' replace_na<- input_df %>% 
+        group_by(input_df) %>% 
+        summarize(input_df)
+```
+
 
 
 ## CleanR and R's Ecosystem
