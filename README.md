@@ -34,11 +34,11 @@ locate_na <- function(data) {
 
 ```
 
-**Function 3)**
+**Function 3)**`replace_na`:Replaces missing NA values with either min, max, median, or average (default) values of the column(s). There will be an option to remove the rows with NAs.
 ```
 #' `replace_na`
 #' @description
-#'Replaces missing NA values with either min, #'max, median, #'or average (default) values of the column(s). #'There will #'be an option to remove the rows with NAs.
+#'This function replaces na values with either the min, max, #'median or average value or removes the rows.
 
 #' @param input_df dataframe, dataframe that the  function #'will use to replace NAs.
 
@@ -51,8 +51,6 @@ locate_na <- function(data) {
         group_by(input_df) %>% 
         summarize(input_df)
 ```
-
-
 
 ## CleanR and R's Ecosystem
 Sometimes it can get quite annoying dealing with data, so it is always nice to get some information about a quick summary of the data. A similar function in R that is implemented is the `summary()` function. CleanR's `summary()` function is very similar in the sense that it also produces summary statistics, but presented in a much more intuitive manner. Our `summary()` function also has more information such as the number of missing values, as well as provide summaries of text information. In regards to our `locate_na()` and `replace_na()`, there is no similar function created in the current R ecosystem that we know of. The only way to do this is to mannually combine a few functions including `is.na()`.
