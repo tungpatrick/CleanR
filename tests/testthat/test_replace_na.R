@@ -19,8 +19,7 @@ test_that("Test that input is a data frame", {
 
 test_that("Test that input has NA", {
   all_na_result <- list(x=c(1,2,3), y=c(1,2,3), z=c(1,2,3))
-
-  expect_warning(replace_na(toy_all_na), "don't do anything")
+  expect_warning(replace_na(toy_all_na), "There are no missing values")
 
 })
 test_that("Test that if the whole input has NA", {
