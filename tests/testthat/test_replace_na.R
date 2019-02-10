@@ -34,6 +34,3 @@ test_that("Test that the input dimension equals the output dimension", {
 
   expect_warning(replace_na(toy_same_dim), "The dimensions don't match")
 })
-
-
-

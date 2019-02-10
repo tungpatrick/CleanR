@@ -2,7 +2,6 @@ context("Locate NA function")
 library(CleanR)
 library(tibble)
 
-
 toy_data_tbl <- tribble(
   ~x, ~y,  ~z,
   NA, 2,  3.6,
@@ -28,9 +27,18 @@ test_that("Test valid output format", {
 test_that("Test for correct functionality of the function", {
   toy_result <- list(x=c(1), y=c(2,3), z=c(3))
   all_na_result <- list(x=c(1,2,3), y=c(1,2,3), z=c(1,2,3))
-  no_na_result <- list(x=c(0), y=c(0))
+  no_na_result <- list()
 
   expect_equal(locate_na(toy_data_tbl), toy_result)
   expect_warning(locate_na(toy_all_na), "All values are missing.")
   expect_warning(locate_na(toy_no_na), "No NAs are in the input data.")
+})
+
+test_that("Test that output cannot have have more rows and columns than the original input data", {
+  expect_lte(len(locate_na(toy_data_tbl)), dim(toy_data_tbl)[2])
+  expect_lte(len(locate_na(toy_all_na)), dim(toy_all_na)[2])
+  expect_lte(len(locate_na(toy_no_na)), dim(toy_no_na)[2])
+  expect_lte(max(rapply(locate_na(toy_data_tbl),length)), dim(toy_data_tbl)[1])
+  expect_lte(max(rapply(locate_na(toy_all_na),length)), dim(toy_all_na)[1])
+  expect_lte(max(rapply(locate_na(toy_no_na),length)), dim(toy_no_na)[1])
 })

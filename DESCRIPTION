@@ -22,3 +22,5 @@ LazyData: true
 URL: https://github.com/tungpatrick/CleanR
 BugReports: https://github.com/tungpatrick/CleanR/issues
 RoxygenNote: 6.1.1
+Suggests: 
+    testthat
